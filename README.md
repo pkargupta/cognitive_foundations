@@ -2,9 +2,9 @@
 
 <p align="center"><img src="https://github.com/pkargupta/cognitive_foundations/blob/main/figs/readme_image.png" alt="Cognitive Foundations"/></p>
 
-![Static Badge](https://img.shields.io/badge/Paper-white?style=for-the-badge&logo=arxiv&logoColor=%23e46e2f&color=%232e4969&link=https%3A%2F%2Farxiv.org%2Fabs%2F2511.16660)
-![Static Badge](https://img.shields.io/badge/Blog-white?style=for-the-badge&logo=notion&logoColor=%23e46e2f&color=%232e4969&link=https%3A%2F%2Ftinyurl.com%2Fcognitive-foundations)
-![Static Badge](https://img.shields.io/badge/Dataset-white?style=for-the-badge&logo=huggingface&logoColor=%23e46e2f&color=%232e4969&link=https%3A%2F%2Fhuggingface.co%2Fcollections%2Fstellalisy%2Fcognitive-foundations)
+[![Static Badge](https://img.shields.io/badge/Paper-white?style=for-the-badge&logo=arxiv&logoColor=%23e46e2f&color=%232e4969)](https://arxiv.org/abs/2511.16660)
+[![Static Badge](https://img.shields.io/badge/Blog-white?style=for-the-badge&logo=notion&logoColor=%23e46e2f&color=%232e4969)](https://tinyurl.com/cognitive-foundations)
+[![Static Badge](https://img.shields.io/badge/Dataset-white?style=for-the-badge&logo=huggingface&logoColor=%23e46e2f&color=%232e4969)](https://huggingface.co/collections/stellalisy/cognitive-foundations)
 
 [Priyanka Kargupta*](https://pkargupta.github.io/), [Shuyue Stella Li*](https://stellalisy.com/), [Haocheng Wang](https://hassonlab.princeton.edu/publications/contributor/wang-haocheng), [Jinu Lee](https://jinulee-v.github.io/), [Shan Chen](https://shanchen.dev/), [Orevaoghene Ahia](https://orevaahia.github.io/), [Dean Light](https://www.linkedin.com/in/dean-light), [Thomas L. Griffiths](https://cocosci.princeton.edu/tom/index.php), [Max Kleiman-Weiner](https://faculty.washington.edu/maxkw/), [Jiawei Han](https://hanj.cs.illinois.edu/), [Asli Celikyilmaz](http://asli.us/), [Yulia Tsvetkov](https://homes.cs.washington.edu/~yuliats/)
 
@@ -37,7 +37,8 @@ Our evaluation encompasses **192,000 model traces** from **18 different LLMs** a
 ### Output Data Format
 
 In order to run [test-time reasoning guidance](#test-time-reasoning-guidance), we expect the following JSON file format for each model's span-level annotation result. We automatically read all model-specific JSON files from a specified directory:
-``
+
+```
 # One file per model
 {
     "[question_id]_[model_name]": {
@@ -56,8 +57,7 @@ In order to run [test-time reasoning guidance](#test-time-reasoning-guidance), w
         }
     }
 }
-
-``
+```
 
 ## Test-Time Reasoning Guidance
 
